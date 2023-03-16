@@ -68,7 +68,7 @@ class _OtpVerifyState extends State<OtpVerify> {
           ),
           ResponsiveRowColumnItem(
               rowFlex: 3,
-              columnFlex: 8,
+              columnFlex: 12,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

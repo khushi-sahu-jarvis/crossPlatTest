@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               ResponsiveRowColumnItem(
                 rowFlex:2,
-                columnFlex: 6,
+                columnFlex: 8,
                 child: Column(
                    mainAxisAlignment: ResponsiveWrapper.of(context).isTablet|| ResponsiveWrapper.of(context).isDesktop?  MainAxisAlignment.center: MainAxisAlignment.start,
                   children: [
