@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:image_picker/image_picker.dart';
+import 'package:image_picker_for_web/image_picker_for_web.dart';
 class DashBoard extends StatefulWidget {
   const DashBoard({Key? key}) : super(key: key);
   @override
@@ -32,8 +33,9 @@ class _DashBoardState extends State<DashBoard> {
                 backgroundColor:
                 MaterialStateProperty.all(AppColor().buttoncolor),
               ),
-              onPressed: () {
-                scanQRCode();
+              onPressed: () async {
+                 await ImagePickerPlugin().pickImage(source: ImageSource.camera);
+
               },
               child: Text(
                 'Scan QR',
