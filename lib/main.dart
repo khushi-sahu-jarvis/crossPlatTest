@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
-import 'dashboardscreen/view/DashBoard.dart';
 import 'loginscreen/repository/service/SendOtpApi.dart';
 import 'loginscreen/view/LoginScreen.dart';
 
@@ -43,7 +42,7 @@ class MyApp extends StatelessWidget {
            ),
         initialRoute: "/",
         debugShowCheckedModeBanner: false,
-        home: DashBoard(),
+        home: LoginScreen(),
       ),
     );
   }
